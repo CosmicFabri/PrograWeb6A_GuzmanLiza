@@ -18,7 +18,7 @@ function generarTablero($filas, $columnas, $minas) {
         // Incrementar los valores alrededor de la mina
         for ($j = $fila - 1; $j <= $fila + 1; $j++) {
             for ($k = $columna - 1; $k <= $columna + 1; $k++) {
-                if ($j >= 0 && $j < $filas && $k >= 0 && $k < $columnas && $tablero[$j][$k] != -1) {
+                if ($j >= 0 && $j < $filas && $k >= 0 && $k < $columnas && $tablero[$j][$k] !== -1) {
                     $tablero[$j][$k]++;
                 }
             }
