@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscaminas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        #tablero {
+            display: grid;
+            grid-template-columns: repeat(8, 30px);
+            gap: 2px;
+        }
+
+        .celda {
+            width: 30px;
+            height: 30px;
+            background-color: #ddd;
+            border: 1px solid #888;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+
+        .celda:hover {
+            background-color: #ccc;
+        }
+
+        .celda.revelada {
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body>
+    <label for="nivel">Selecciona el nivel:</label>
+    <select id="nivel">
+        <option value="">Ninguno</option>
+        <option value="facil">Fácil</option>
+        <option value="medio">Medio</option>
+        <option value="dificil">Difícil</option>
+    </select>
+
+    <div id="tablero"></div>
+
+    <script>
+        function generarTablero(filas, columnas) {
+            // Obtener el contenedor del tablero
+            let tablero = document.getElementById('tablero')
+
+            // Limpiar el tablero
+            tablero.innerHTML = ''
+
+            // Crear las celdas del tablero
+            for (let i = 0; i < filas; i++) {
+                for (let j = 0; j < columnas; j++) {
+                    let celda = document.createElement('div')
+                    celda.className = 'celda'
+                    celda.textContent = ''
+
+                    const fila = i
+                    const columna = j
+
+                    tablero.appendChild(celda)
+                }
+            }
+
+            // Establecer las dimensiones del tablero usando CSS grid
+            tablero.style.gridTemplateColumns = `repeat(${columnas}, 30px)`
+        }
+
+        const coloresNumeros = [
+            'blue',
+            'green',
+            'red',
+            'purple',
+            'maroon',
+            'turquoise',
+            'black',
+            'gray'
+        ]
+
+        document.querySelector('#nivel').addEventListener('change', async (e) => {
+            // Obtener el nivel seleccionado
+            let nivel = document.getElementById('nivel').value
+
+            // Establecer las dimensiones del tablero según el nivel
+            let filas, columnas
+
+            switch (nivel) {
+                case 'facil':
+                    filas = 8
+                    columnas = 8
+                    break;
+                case 'medio':
+                    filas = 16
+                    columnas = 16
+                    break;
+                case 'dificil':
+                    filas = 16
+                    columnas = 30
+                    break;
+            }
+
+            await fetch(window.location.href + 'generar_tablero.php', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ nivel })
+            })
+            .then(response => response.json())
+            .then(data => {
+                console.log(data)
+            })
+            .catch((error) => {
+                console.error('Error:', error)
+            })
+
+            // Generar el tablero
+            generarTablero(filas, columnas)
+        })
+    </script>
+</body>
+</html>
