@@ -64,6 +64,39 @@
                     const fila = i
                     const columna = j
 
+                    celda.addEventListener('click', async (e) => {
+                        await fetch(window.location.href + 'revelar_celda.php', {
+                            method: 'POST',
+                            headers: {
+                                'Content-Type': 'application/json'
+                            },
+                            body: JSON.stringify({ fila, columna })
+                        })
+                        .then(response => response.json())
+                        .then(data => {
+                            const spanNumero = document.createElement('span')
+
+                            e.target.classList.add('revelada')
+
+                            if (data.valor != -1 && data.valor != 0) {
+                                spanNumero.setAttribute('style', `color: ${coloresNumeros[data.valor - 1]}`)
+                                spanNumero.textContent = data.valor
+
+                                e.target.appendChild(spanNumero)
+                            } else if (data.valor == 0) {
+                                spanNumero.textContent = ''
+                                e.target.setAttribute('style', 'background-color: gray')
+                                e.target.appendChild(spanNumero)
+                            } else {
+                                spanNumero.textContent = '💣'
+                                e.target.appendChild(spanNumero)
+                            }
+                        })
+                        .catch((error) => {
+                            console.error('Error:', error)
+                        })
+                    }, fila, columna)
+
                     tablero.appendChild(celda)
                 }
             }
