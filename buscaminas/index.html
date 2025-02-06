@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -35,6 +36,7 @@
         }
     </style>
 </head>
+
 <body>
     <label for="nivel">Selecciona el nivel:</label>
     <select id="nivel">
@@ -47,6 +49,70 @@
     <div id="tablero"></div>
 
     <script>
+        // Colores que usaremos para
+        // los números del tablero
+        const coloresNumeros = [
+            'blue',
+            'green',
+            'red',
+            'purple',
+            'maroon',
+            'turquoise',
+            'black',
+            'gray'
+        ]
+
+        let nivel, filas, columnas
+
+        // Establecer las dimensiones del tablero según el nivel
+        function establecerFilasColumnas(nivel) {
+            switch (nivel) {
+                case 'facil':
+                    filas = 8
+                    columnas = 8
+                    break;
+                case 'medio':
+                    filas = 16
+                    columnas = 16
+                    break;
+                case 'dificil':
+                    filas = 16
+                    columnas = 30
+                    break;
+            }
+        }
+
+
+        /* 1.- Elegir una dificultad, crear tablero del lado del servidor */
+        document.querySelector('#nivel').addEventListener('change', async (e) => {
+            // Obtener el nivel seleccionado
+            nivel = document.getElementById('nivel').value
+
+            establecerFilasColumnas(nivel)
+
+            // Enviar el nivel al servidor para crear un tablero
+            await fetch(window.location.href + 'generar_tablero.php', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ nivel })
+            })
+                .then(response => response.json())
+                .then(data => {
+                    // Imprimir nivel y tablero,
+                    // brindados por el serviror
+                    console.log(data)
+                })
+                .catch((error) => {
+                    console.error('Error:', error)
+                })
+
+            // Generar el tablero
+            generarTablero(filas, columnas)
+        })
+
+        /* 2.- Generar tablero visual del lado del cliente */
         function generarTablero(filas, columnas) {
             // Obtener el contenedor del tablero
             let tablero = document.getElementById('tablero')
@@ -64,6 +130,8 @@
                     const fila = i
                     const columna = j
 
+                    // Listener para consultar al servidor
+                    // si esta celda contiene una mina
                     celda.addEventListener('click', async (e) => {
                         await fetch(window.location.href + 'revelar_celda.php', {
                             method: 'POST',
@@ -72,29 +140,27 @@
                             },
                             body: JSON.stringify({ fila, columna })
                         })
-                        .then(response => response.json())
-                        .then(data => {
-                            const spanNumero = document.createElement('span')
+                            .then(response => response.json())
+                            .then(data => {
+                                const spanNumero = document.createElement('span')
 
-                            e.target.classList.add('revelada')
+                                e.target.classList.add('revelada')
 
-                            if (data.valor != -1 && data.valor != 0) {
-                                spanNumero.setAttribute('style', `color: ${coloresNumeros[data.valor - 1]}`)
-                                spanNumero.textContent = data.valor
-
-                                e.target.appendChild(spanNumero)
-                            } else if (data.valor == 0) {
-                                spanNumero.textContent = ''
-                                e.target.setAttribute('style', 'background-color: gray')
-                                e.target.appendChild(spanNumero)
-                            } else {
-                                spanNumero.textContent = '💣'
-                                e.target.appendChild(spanNumero)
-                            }
-                        })
-                        .catch((error) => {
-                            console.error('Error:', error)
-                        })
+                                if (data.valor != -1 && data.valor != 0) {
+                                    spanNumero.setAttribute('style', `color: ${coloresNumeros[data.valor - 1]}`)
+                                    spanNumero.textContent = data.valor
+                                    e.target.appendChild(spanNumero)
+                                } else if (data.valor == 0) {
+                                    spanNumero.textContent = ''
+                                    e.target.setAttribute('style', 'background-color: gray')
+                                    e.target.appendChild(spanNumero)
+                                } else {
+                                    revelarBombas(filas, columnas, e)
+                                }
+                            })
+                            .catch((error) => {
+                                console.error('Error:', error)
+                            })
                     }, fila, columna)
 
                     tablero.appendChild(celda)
@@ -105,57 +171,41 @@
             tablero.style.gridTemplateColumns = `repeat(${columnas}, 30px)`
         }
 
-        const coloresNumeros = [
-            'blue',
-            'green',
-            'red',
-            'purple',
-            'maroon',
-            'turquoise',
-            'black',
-            'gray'
-        ]
+        /* 3.- Revelar todas las bombas al haber perdido */
+        async function revelarBombas(filas, columnas) {
+            let celdas = document.querySelectorAll('.celda')
 
-        document.querySelector('#nivel').addEventListener('change', async (e) => {
-            // Obtener el nivel seleccionado
-            let nivel = document.getElementById('nivel').value
+            for (let fila = 0; fila < filas; fila++) {
+                for (let columna = 0; columna < columnas; columna++) {
+                    await fetch(window.location.href + 'revelar_celda.php', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify({ fila, columna })
+                    })
+                        .then(response => response.json())
+                        .then(data => {
+                            if (data.valor == -1) {
+                                // Obtener la celda correcta del DOM
+                                let index = fila * columnas + columna
+                                let celda = celdas[index]
 
-            // Establecer las dimensiones del tablero según el nivel
-            let filas, columnas
+                                let spanNumero = document.createElement('span')
+                                spanNumero.textContent = '💣'
 
-            switch (nivel) {
-                case 'facil':
-                    filas = 8
-                    columnas = 8
-                    break;
-                case 'medio':
-                    filas = 16
-                    columnas = 16
-                    break;
-                case 'dificil':
-                    filas = 16
-                    columnas = 30
-                    break;
+                                celda.classList.add('revelada')
+                                celda.appendChild(spanNumero)
+                            }
+                        })
+                        .catch(error => console.error('Error:', error))
+                }
             }
 
-            await fetch(window.location.href + 'generar_tablero.php', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify({ nivel })
-            })
-            .then(response => response.json())
-            .then(data => {
-                console.log(data)
-            })
-            .catch((error) => {
-                console.error('Error:', error)
-            })
-
-            // Generar el tablero
+            alert('Has perdido!')
             generarTablero(filas, columnas)
-        })
+        }
     </script>
 </body>
+
 </html>
