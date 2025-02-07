@@ -114,30 +114,26 @@
 
         /* 2.- Generar tablero visual del lado del cliente */
         function generarTablero(filas, columnas) {
-            // Obtener el contenedor del tablero
             let tablero = document.getElementById('tablero')
+            tablero.innerHTML = '' // Limpiar el tablero
 
-            // Limpiar el tablero
-            tablero.innerHTML = ''
-
-            // Crear las celdas del tablero
             for (let i = 0; i < filas; i++) {
                 for (let j = 0; j < columnas; j++) {
                     let celda = document.createElement('div')
                     celda.className = 'celda'
                     celda.textContent = ''
+                    let marcado = false // Estado de la bandera
 
                     const fila = i
                     const columna = j
 
-                    // Listener para consultar al servidor
-                    // si esta celda contiene una mina
+                    // Evitar revelar una celda con bandera
                     celda.addEventListener('click', async (e) => {
+                        if (marcado) return // Si hay una bandera, no hacer nada
+
                         await fetch(window.location.href + 'revelar_celda.php', {
                             method: 'POST',
-                            headers: {
-                                'Content-Type': 'application/json'
-                            },
+                            headers: { 'Content-Type': 'application/json' },
                             body: JSON.stringify({ fila, columna })
                         })
                             .then(response => response.json())
@@ -147,29 +143,40 @@
                                 e.target.classList.add('revelada')
 
                                 if (data.valor != -1 && data.valor != 0) {
-                                    spanNumero.setAttribute('style', `color: ${coloresNumeros[data.valor - 1]}`)
+                                    spanNumero.style.color = coloresNumeros[data.valor - 1]
                                     spanNumero.textContent = data.valor
                                     e.target.appendChild(spanNumero)
                                 } else if (data.valor == 0) {
-                                    spanNumero.textContent = ''
-                                    e.target.setAttribute('style', 'background-color: gray')
-                                    e.target.appendChild(spanNumero)
+                                    e.target.style.backgroundColor = 'gray'
                                 } else {
                                     revelarBombas(filas, columnas, e)
                                 }
                             })
-                            .catch((error) => {
-                                console.error('Error:', error)
-                            })
-                    }, fila, columna)
+                            .catch(error => console.error('Error:', error))
+                    })
+
+                    // Alternar la bandera con click derecho
+                    celda.addEventListener('contextmenu', (e) => {
+                        e.preventDefault()
+                        if (celda.classList.contains('revelada')) return // No marcar una celda revelada
+
+                        marcado = !marcado // Alternar estado
+
+                        if (marcado) {
+                            celda.textContent = '🚩'
+                        } else {
+                            celda.textContent = ''
+                        }
+                    })
 
                     tablero.appendChild(celda)
                 }
             }
 
-            // Establecer las dimensiones del tablero usando CSS grid
+            // Ajustar el CSS Grid
             tablero.style.gridTemplateColumns = `repeat(${columnas}, 30px)`
         }
+
 
         /* 3.- Revelar todas las bombas al haber perdido */
         async function revelarBombas(filas, columnas) {
