@@ -1,0 +1,15 @@
+DROP DATABASE IF EXISTS prueba;
+
+CREATE DATABASE prueba;
+
+USE prueba;
+
+CREATE TABLE usuarios (
+    id INT NOT NULL AUTO_INCREMENT,
+    nombres VARCHAR(100) NOT NULL,
+    apellidos VARCHAR(100) NOT NULL,
+    usuario VARCHAR(100) NULL,
+    correo VARCHAR(100) NOT NULL UNIQUE,
+    password VARCHAR(100) NULL,
+    PRIMARY KEY (id)
+);
