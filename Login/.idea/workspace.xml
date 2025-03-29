@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="ProgramacionWeb_ITS_Prac1:war exploded" />
+    </artifacts-to-build>
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c525408d-24f5-4100-84a4-45615d4e4fee" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../Log1n/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Log1n/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Log1n/mvnw.cmdZone.Identifier" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Log1n/mvnw.cmdZone.IdentifierZone.Identifier" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Log1n/mvnwZone.Identifier" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Log1n/mvnwZone.IdentifierZone.Identifier" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Log1n/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Log1n/pom.xmlZone.Identifier" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Log1n/pom.xmlZone.IdentifierZone.Identifier" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Log1n/src/main/java/com/example/programacionweb_its_prac1/AutenticacionServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Log1n/src/main/java/com/example/programacionweb_its_prac1/AutenticacionServlet.javaZone.Identifier" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Log1n/src/main/java/com/example/programacionweb_its_prac1/AutenticacionServlet.javaZone.IdentifierZone.Identifier" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Log1n/src/main/java/com/example/programacionweb_its_prac1/HelloServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Log1n/src/main/java/com/example/programacionweb_its_prac1/HelloServlet.javaZone.Identifier" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Log1n/src/main/java/com/example/programacionweb_its_prac1/HelloServlet.javaZone.IdentifierZone.Identifier" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Log1n/src/main/java/com/example/programacionweb_its_prac1/JsonResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Log1n/src/main/java/com/example/programacionweb_its_prac1/JsonResponse.javaZone.Identifier" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Log1n/src/main/java/com/example/programacionweb_its_prac1/JsonResponse.javaZone.IdentifierZone.Identifier" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Log1n/src/main/java/com/example/programacionweb_its_prac1/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Log1n/src/main/java/com/example/programacionweb_its_prac1/User.javaZone.Identifier" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Log1n/src/main/java/com/example/programacionweb_its_prac1/User.javaZone.IdentifierZone.Identifier" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Log1n/src/main/java/com/example/programacionweb_its_prac1/UserServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Log1n/src/main/java/com/example/programacionweb_its_prac1/UserServlet.javaZone.Identifier" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Log1n/src/main/java/com/example/programacionweb_its_prac1/UserServlet.javaZone.IdentifierZone.Identifier" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Log1n/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Log1n/src/main/webapp/WEB-INF/web.xmlZone.Identifier" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Log1n/src/main/webapp/WEB-INF/web.xmlZone.IdentifierZone.Identifier" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Log1n/src/main/webapp/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Log1n/src/main/webapp/index.jspZone.Identifier" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Log1n/src/main/webapp/index.jspZone.IdentifierZone.Identifier" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Log1n/target/classes/com/example/programacionweb_its_prac1/AutenticacionServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Log1n/target/classes/com/example/programacionweb_its_prac1/AutenticacionServlet.classZone.Identifier" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Log1n/target/classes/com/example/programacionweb_its_prac1/AutenticacionServlet.classZone.IdentifierZone.Identifier" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Log1n/target/classes/com/example/programacionweb_its_prac1/HelloServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Log1n/target/classes/com/example/programacionweb_its_prac1/HelloServlet.classZone.Identifier" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Log1n/target/classes/com/example/programacionweb_its_prac1/HelloServlet.classZone.IdentifierZone.Identifier" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Log1n/target/classes/com/example/programacionweb_its_prac1/JsonResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Log1n/target/classes/com/example/programacionweb_its_prac1/JsonResponse.classZone.Identifier" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Log1n/target/classes/com/example/programacionweb_its_prac1/JsonResponse.classZone.IdentifierZone.Identifier" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Log1n/target/classes/com/example/programacionweb_its_prac1/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Log1n/target/classes/com/example/programacionweb_its_prac1/User.classZone.Identifier" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Log1n/target/classes/com/example/programacionweb_its_prac1/User.classZone.IdentifierZone.Identifier" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Log1n/target/classes/com/example/programacionweb_its_prac1/UserServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Log1n/target/classes/com/example/programacionweb_its_prac1/UserServlet.classZone.Identifier" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Log1n/target/classes/com/example/programacionweb_its_prac1/UserServlet.classZone.IdentifierZone.Identifier" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Log1n/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Log1n/target/maven-archiver/pom.propertiesZone.Identifier" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Log1n/target/maven-archiver/pom.propertiesZone.IdentifierZone.Identifier" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Log1n/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Log1n/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lstZone.Identifier" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Log1n/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lstZone.IdentifierZone.Identifier" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Log1n/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Log1n/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lstZone.Identifier" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Log1n/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lstZone.IdentifierZone.Identifier" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Log1n/target/programacion-web-its-prac4.war" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Log1n/target/programacion-web-its-prac4.warZone.Identifier" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Log1n/target/programacion-web-its-prac4.warZone.IdentifierZone.Identifier" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Log1n/target/programacion-web-its-prac4/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Log1n/target/programacion-web-its-prac4/META-INF/MANIFEST.MFZone.Identifier" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Log1n/target/programacion-web-its-prac4/META-INF/MANIFEST.MFZone.IdentifierZone.Identifier" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Log1n/target/programacion-web-its-prac4/WEB-INF/classes/com/example/programacionweb_its_prac1/AutenticacionServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Log1n/target/programacion-web-its-prac4/WEB-INF/classes/com/example/programacionweb_its_prac1/AutenticacionServlet.classZone.Identifier" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Log1n/target/programacion-web-its-prac4/WEB-INF/classes/com/example/programacionweb_its_prac1/AutenticacionServlet.classZone.IdentifierZone.Identifier" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Log1n/target/programacion-web-its-prac4/WEB-INF/classes/com/example/programacionweb_its_prac1/HelloServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Log1n/target/programacion-web-its-prac4/WEB-INF/classes/com/example/programacionweb_its_prac1/HelloServlet.classZone.Identifier" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Log1n/target/programacion-web-its-prac4/WEB-INF/classes/com/example/programacionweb_its_prac1/HelloServlet.classZone.IdentifierZone.Identifier" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Log1n/target/programacion-web-its-prac4/WEB-INF/classes/com/example/programacionweb_its_prac1/JsonResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Log1n/target/programacion-web-its-prac4/WEB-INF/classes/com/example/programacionweb_its_prac1/JsonResponse.classZone.Identifier" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Log1n/target/programacion-web-its-prac4/WEB-INF/classes/com/example/programacionweb_its_prac1/JsonResponse.classZone.IdentifierZone.Identifier" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Log1n/target/programacion-web-its-prac4/WEB-INF/classes/com/example/programacionweb_its_prac1/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Log1n/target/programacion-web-its-prac4/WEB-INF/classes/com/example/programacionweb_its_prac1/User.classZone.Identifier" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Log1n/target/programacion-web-its-prac4/WEB-INF/classes/com/example/programacionweb_its_prac1/User.classZone.IdentifierZone.Identifier" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Log1n/target/programacion-web-its-prac4/WEB-INF/classes/com/example/programacionweb_its_prac1/UserServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Log1n/target/programacion-web-its-prac4/WEB-INF/classes/com/example/programacionweb_its_prac1/UserServlet.classZone.Identifier" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Log1n/target/programacion-web-its-prac4/WEB-INF/classes/com/example/programacionweb_its_prac1/UserServlet.classZone.IdentifierZone.Identifier" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Log1n/target/programacion-web-its-prac4/WEB-INF/lib/gson-2.10.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Log1n/target/programacion-web-its-prac4/WEB-INF/lib/gson-2.10.1.jarZone.Identifier" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Log1n/target/programacion-web-its-prac4/WEB-INF/lib/gson-2.10.1.jarZone.IdentifierZone.Identifier" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Log1n/target/programacion-web-its-prac4/WEB-INF/lib/jackson-annotations-2.12.7.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Log1n/target/programacion-web-its-prac4/WEB-INF/lib/jackson-annotations-2.12.7.jarZone.Identifier" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Log1n/target/programacion-web-its-prac4/WEB-INF/lib/jackson-annotations-2.12.7.jarZone.IdentifierZone.Identifier" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Log1n/target/programacion-web-its-prac4/WEB-INF/lib/jackson-core-2.12.7.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Log1n/target/programacion-web-its-prac4/WEB-INF/lib/jackson-core-2.12.7.jarZone.Identifier" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Log1n/target/programacion-web-its-prac4/WEB-INF/lib/jackson-core-2.12.7.jarZone.IdentifierZone.Identifier" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Log1n/target/programacion-web-its-prac4/WEB-INF/lib/jackson-databind-2.12.7.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Log1n/target/programacion-web-its-prac4/WEB-INF/lib/jackson-databind-2.12.7.1.jarZone.Identifier" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Log1n/target/programacion-web-its-prac4/WEB-INF/lib/jackson-databind-2.12.7.1.jarZone.IdentifierZone.Identifier" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Log1n/target/programacion-web-its-prac4/WEB-INF/lib/jbcrypt-0.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Log1n/target/programacion-web-its-prac4/WEB-INF/lib/jbcrypt-0.4.jarZone.Identifier" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Log1n/target/programacion-web-its-prac4/WEB-INF/lib/jbcrypt-0.4.jarZone.IdentifierZone.Identifier" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Log1n/target/programacion-web-its-prac4/WEB-INF/lib/jjwt-api-0.12.5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Log1n/target/programacion-web-its-prac4/WEB-INF/lib/jjwt-api-0.12.5.jarZone.Identifier" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Log1n/target/programacion-web-its-prac4/WEB-INF/lib/jjwt-api-0.12.5.jarZone.IdentifierZone.Identifier" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Log1n/target/programacion-web-its-prac4/WEB-INF/lib/jjwt-impl-0.12.5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Log1n/target/programacion-web-its-prac4/WEB-INF/lib/jjwt-impl-0.12.5.jarZone.Identifier" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Log1n/target/programacion-web-its-prac4/WEB-INF/lib/jjwt-impl-0.12.5.jarZone.IdentifierZone.Identifier" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Log1n/target/programacion-web-its-prac4/WEB-INF/lib/jjwt-jackson-0.12.5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Log1n/target/programacion-web-its-prac4/WEB-INF/lib/jjwt-jackson-0.12.5.jarZone.Identifier" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Log1n/target/programacion-web-its-prac4/WEB-INF/lib/jjwt-jackson-0.12.5.jarZone.IdentifierZone.Identifier" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Log1n/target/programacion-web-its-prac4/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Log1n/target/programacion-web-its-prac4/WEB-INF/web.xmlZone.Identifier" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Log1n/target/programacion-web-its-prac4/WEB-INF/web.xmlZone.IdentifierZone.Identifier" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Log1n/target/programacion-web-its-prac4/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Log1n/target/programacion-web-its-prac4/index.jspZone.Identifier" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Log1n/target/programacion-web-its-prac4/index.jspZone.IdentifierZone.Identifier" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../buscaminas/generar_tablero.php" beforeDir="false" afterPath="$PROJECT_DIR$/../buscaminas/generar_tablero.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../buscaminas/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../buscaminas/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../buscaminas/revelar_celda.php" beforeDir="false" afterPath="$PROJECT_DIR$/../buscaminas/revelar_celda.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ejercicios/buscaminas.php" beforeDir="false" afterPath="$PROJECT_DIR$/../ejercicios/buscaminas.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ejercicios/diamante.php" beforeDir="false" afterPath="$PROJECT_DIR$/../ejercicios/diamante.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ejercicios/piedra_papel_tijera_lagarto_spock.php" beforeDir="false" afterPath="$PROJECT_DIR$/../ejercicios/piedra_papel_tijera_lagarto_spock.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../usuarios/DataSource.php" beforeDir="false" afterPath="$PROJECT_DIR$/../usuarios/DataSource.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../usuarios/IDao.php" beforeDir="false" afterPath="$PROJECT_DIR$/../usuarios/IDao.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../usuarios/Usuario.php" beforeDir="false" afterPath="$PROJECT_DIR$/../usuarios/Usuario.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../usuarios/UsuarioDAO.php" beforeDir="false" afterPath="$PROJECT_DIR$/../usuarios/UsuarioDAO.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../usuarios/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/../usuarios/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../usuarios/script.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../usuarios/script.sql" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="2fEh5jvPrvcUW9B5aM5XIoogbOA" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "TomEE Server.TomEE 10.0.27.executor": "Run",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Juan/IdeaProjects/ProgramacionWeb_ITS_Prac4",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RdControllerToolWindowsLayoutState" isNewUi="true">
+    <layout>
+      <window_info id="Bookmarks" side_tool="true" />
+      <window_info id="Merge Requests" />
+      <window_info id="Commit_Guest" show_stripe_button="false" />
+      <window_info id="Pull Requests" />
+      <window_info id="Learn" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.32975262" />
+      <window_info id="Commit" order="1" weight="0.25" />
+      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Database Changes" />
+      <window_info anchor="bottom" id="TypeScript" />
+      <window_info anchor="bottom" id="Profiler" />
+      <window_info anchor="bottom" id="TODO" />
+      <window_info anchor="bottom" id="File Transfer" />
+      <window_info anchor="bottom" id="Run" />
+      <window_info anchor="bottom" id="Version Control" order="0" />
+      <window_info anchor="bottom" id="Problems" order="1" />
+      <window_info anchor="bottom" id="Problems View" order="2" />
+      <window_info anchor="bottom" id="Terminal" order="3" />
+      <window_info anchor="bottom" id="Services" order="4" weight="0.3302696" />
+      <window_info anchor="bottom" id="Build" order="5" weight="0.3302696" />
+      <window_info anchor="right" id="Endpoints" />
+      <window_info anchor="right" id="Coverage" side_tool="true" />
+      <window_info anchor="right" content_ui="combo" id="Notifications" order="0" weight="0.25" />
+      <window_info anchor="right" id="AIAssistant" order="1" weight="0.25" />
+      <window_info anchor="right" id="Database" order="2" weight="0.25" />
+      <window_info anchor="right" id="Gradle" order="3" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="4" weight="0.25" />
+    </layout>
+  </component>
+  <component name="RunManager">
+    <configuration name="TomEE 10.0.27" type="TomeeConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="TomEE 10.0.27" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="/usr/lib/jvm/java-21-openjdk-amd64">
+      <option name="SHOW_DIALOG_ON_UPDATE" value="false" />
+      <option name="UPDATING_POLICY" value="redeploy-artifacts" />
+      <deployment>
+        <artifact name="ProgramacionWeb_ITS_Prac1:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/programacion-web-its-prac4/" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="242efb25-376a-465b-bfc6-31a850183a38" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="61780" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Profile">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="ProgramacionWeb_ITS_Prac1:war exploded" />
+        </option>
+      </method>
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-fbdcb00ec9e3-intellij.indexing.shared.core-IU-251.23774.200" />
+        <option value="bundled-js-predefined-d6986cc7102b-f27c65a3e318-JavaScript-IU-251.23774.200" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c525408d-24f5-4100-84a4-45615d4e4fee" name="Changes" comment="" />
+      <created>1713371965571</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1713371965571</updated>
+      <workItem from="1713371966677" duration="374000" />
+      <workItem from="1713372353741" duration="15262000" />
+      <workItem from="1714349928063" duration="6705000" />
+      <workItem from="1714392586874" duration="6718000" />
+      <workItem from="1714414121517" duration="233000" />
+      <workItem from="1714445429947" duration="242000" />
+      <workItem from="1714445835498" duration="668000" />
+      <workItem from="1714447360713" duration="70000" />
+      <workItem from="1743213733243" duration="483000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
